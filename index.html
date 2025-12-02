@@ -7,7 +7,7 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-#948BAD33-100 min-h-screen">
+  <body>
       <header
       class="header-container w-[1440px] h-[128px] p-[24px] gap-[10px] flex justify-center fixed top-0 z-[1000]"
     >
@@ -137,6 +137,77 @@
           </p>
         </div>
       </article>
+    </section>
+
+
+      <section
+        class="mx-auto mb-10 mt-0 flex h-[850px] w-[1439px] flex-col gap-[80px]  px-[120px] pb-[80px] pt-0 font-['Inter']"
+      >
+      <div
+        class="flex h-[666px] w-[1199px] flex-col justify-start self-center rounded-[24px] bg-white px-[120px] py-[80px] text-center shadow-sm"
+      >
+        <header class="mb-12">
+          <h1 class="text-4xl font-semibold text-slate-900">Get in Touch</h1>
+        </header>
+        <form class="w-full max-w-3xl space-y-6" aria-label="Contact form">
+          <article class="text-left">
+            <label
+              for="name"
+              class="mb-2 block text-sm font-medium text-slate-600"
+              >Name</label
+            >
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            />
+          </article>
+          <article class="text-left">
+            <label
+              for="email"
+              class="mb-2 block text-sm font-medium text-slate-600"
+              >Email</label
+            >
+            <input
+              id="email"
+              type="email"
+              placeholder="john@example.com"
+              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            />
+          </article>
+          <article class="text-left">
+            <label
+              for="message"
+              class="mb-2 block text-sm font-medium text-slate-600"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Your message..."
+              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            ></textarea>
+          </article>
+          <button
+            type="submit"
+            class="w-full rounded-2xl bg-slate-900 py-4 text-base font-medium text-white transition hover:bg-slate-800"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <footer class="flex items-center justify-between text-sm text-slate-500">
+        <p>Acme productivity app ©2024</p>
+        <nav aria-label="Secondary navigation">
+          <ul class="flex gap-8">
+            <li><a href="#" class="hover:text-slate-700">FAQ</a></li>
+            <li><a href="#" class="hover:text-slate-700">Terms</a></li>
+            <li><a href="#" class="hover:text-slate-700">AI Policy</a></li>
+            <li><a href="#" class="hover:text-slate-700">Pricing</a></li>
+          </ul>
+        </nav>
+      </footer>
     </section>
   </body>
 </html>
