@@ -7,7 +7,7 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#948BAD33]/20 font-['Inter'] min-h-screen">
+  <body class="bg-[#F6F6FB] font-['Inter'] min-h-screen">
       <header
         class="header-container w-full max-w-[1440px] h-[128px] p-[24px] gap-[10px] flex justify-center items-center fixed top-0 left-1/2 -translate-x-1/2 z-[1000]"
       >
@@ -26,38 +26,30 @@
               </div>
             </div>
           </div>
-          <div
+          <nav
             class="link-container h-[56px] flex gap-[6px] items-center mb-[1px]"
           >
-            <div class="home-container h-[56px] flex items-center px-[4px]">
-              <div
-                class="home w-[46px] h-[24px] font-medium text-base text-center text-[#5E44FF] underline"
-              >
-                Home
-              </div>
-            </div>
-            <div class="feature-container h-[56px] flex items-center px-[4px]">
-              <div
-                class="feature w-[67px] h-[24px] font-medium text-base text-center text-[#1A1A2C]"
-              >
-                Features
-              </div>
-            </div>
-            <div class="price-container h-[56px] flex items-center px-[4px]">
-              <div
-                class="price w-[53px] h-[24px] font-medium text-base text-center text-[#1A1A2C]"
-              >
-                Pricing
-              </div>
-            </div>
-            <div class="contact-container h-[56px] flex items-center px-[4px]">
-              <div
-                class="contact w-[62px] h-[24px] font-medium text-base text-center text-[#1A1A2C]"
-              >
-                Contact
-              </div>
-            </div>
-          </div>
+            <a
+              href="#"
+              class="home w-[46px] h-[24px] flex items-center justify-center font-medium text-base text-[#5E44FF] underline transition hover:text-[#5E44FF] hover:underline"
+              >Home</a
+            >
+            <a
+              href="#features"
+              class="feature w-[67px] h-[24px] flex items-center justify-center font-medium text-base text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline"
+              >Features</a
+            >
+            <a
+              href="#pricing"
+              class="price w-[53px] h-[24px] flex items-center justify-center font-medium text-base text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline"
+              >Pricing</a
+            >
+            <a
+              href="#contact"
+              class="contact w-[62px] h-[24px] flex items-center justify-center font-medium text-base text-[#1A1A2C] transition hover:text-[#5E44FF] hover:underline"
+              >Contact</a
+            >
+          </nav>
         </nav>
       </header>
 
@@ -91,13 +83,9 @@
             </h3>
           </div>
           <button
-            class="free-trial-btn w-[187px] h-[56px] rounded-[16px] pt-[16px] pr-[36px] pb-[16px] pl-[36px] gap-[6px] bg-[#1A1A2C]"
+            class="free-trial-btn w-[187px] rounded-2xl bg-[#1A1A2C] px-9 py-4 text-base font-semibold text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
           >
-            <div
-              class="text-btn w-[115px] h-[24px] font-semibold text-base text-white"
-            >
-              Start Free Trial
-            </div>
+            Start Free Trial
           </button>
         </div>
       </section>
@@ -180,10 +168,10 @@
         class="flex justify-center flex-col gap-[80px] font-['Inter'] px-[120px] pb-[80px] pt-[80px]"
       >
         <div
-          class="flex h-[666px] w-full max-w-[1199px] mx-auto flex-col rounded-[24px] bg-white px-[120px] py-[80px] text-center shadow-sm"
+          class="flex h-[666px] w-full max-w-[1199px] mx-auto flex-col rounded-3xl bg-white px-[120px] py-[80px] text-center shadow-sm"
         >
           <header class="mb-12 mx-auto w-full max-w-3xl">
-            <h1 class="text-4xl font-semibold text-slate-900">Get in Touch</h1>
+            <h1 class="text-5xl font-semibold text-[#1A1A2C]">Get in Touch</h1>
           </header>
           <form
             class="w-full max-w-3xl mx-auto space-y-6"
@@ -199,7 +187,7 @@
                 id="name"
                 type="text"
                 placeholder="John Doe"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
               />
             </article>
             <article class="text-left">
@@ -212,7 +200,7 @@
                 id="email"
                 type="email"
                 placeholder="john@example.com"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
               />
             </article>
             <article class="text-left">
@@ -225,12 +213,12 @@
                 id="message"
                 rows="4"
                 placeholder="Your message..."
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
               ></textarea>
             </article>
             <button
               type="submit"
-              class="w-full rounded-2xl bg-slate-900 py-4 text-base font-medium text-white transition hover:bg-slate-800"
+              class="mx-auto w-[589px] rounded-2xl bg-[#1A1A2C] px-9 py-4 text-base font-medium text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
             >
               Submit
             </button>
@@ -242,10 +230,10 @@
           <p>Acme productivity app ©2024</p>
           <nav aria-label="Secondary navigation">
             <ul class="flex gap-8 font-bold">
-              <li><a href="#" class="hover:text-slate-700">FAQ</a></li>
-              <li><a href="#" class="hover:text-slate-700">Terms</a></li>
-              <li><a href="#" class="hover:text-slate-700">AI Policy</a></li>
-              <li><a href="#" class="hover:text-slate-700">Pricing</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">FAQ</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">Terms</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">AI Policy</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">Pricing</a></li>
             </ul>
           </nav>
         </footer>
