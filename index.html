@@ -208,23 +208,19 @@
       </article>
     </section>
 
-    <section
-      class="flex justify-center flex-col gap-[40px] [@media(min-width:376px)]:gap-[80px] font-['Inter'] px-[16px] [@media(min-width:376px)]:px-[120px] pb-[40px] [@media(min-width:376px)]:pb-[80px] pt-[40px] [@media(min-width:376px)]:pt-[80px]"
+
+      <!-- input-form/pong -->
+       <section
+        class="flex mx-auto w-full max-w-[375px] h-[838px] flex-col items-center justify-between gap-10 font-['Inter'] px-6 pb-10 pt-10 md:max-w-[1440px] md:h-auto md:gap-[80px] md:px-[120px] md:pb-[80px] md:pt-[80px]"
     >
       <div
-        class="flex min-h-[500px] [@media(min-width:376px)]:h-[666px] w-full max-w-[1199px] mx-auto flex-col rounded-[24px] bg-white px-[16px] [@media(min-width:376px)]:px-[120px] py-[32px] [@media(min-width:376px)]:py-[80px] text-center shadow-sm"
+          class="flex w-full flex-col rounded-3xl bg-white px-6 py-10 text-center shadow-sm md:h-[666px] md:max-w-[1199px] md:px-[120px] md:py-[80px]"
       >
-        <header
-          class="mb-8 [@media(min-width:376px)]:mb-12 mx-auto w-full max-w-3xl"
-        >
-          <h1
-            class="text-2xl [@media(min-width:376px)]:text-4xl font-semibold text-slate-900"
-          >
-            Get in Touch
-          </h1>
+          <header class="mb-12 mx-auto w-full max-w-3xl">
+            <h1 class="text-5xl font-semibold text-[#1A1A2C]">Get in Touch</h1>
         </header>
         <form
-          class="w-full max-w-3xl mx-auto space-y-4 [@media(min-width:376px)]:space-y-6"
+            class="w-full max-w-[327px] mx-auto space-y-6 md:max-w-3xl"
           aria-label="Contact form"
         >
           <article class="text-left">
@@ -237,7 +233,7 @@
               id="name"
               type="text"
               placeholder="John Doe"
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
             />
           </article>
           <article class="text-left">
@@ -250,7 +246,7 @@
               id="email"
               type="email"
               placeholder="john@example.com"
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
             />
           </article>
           <article class="text-left">
@@ -263,29 +259,27 @@
               id="message"
               rows="4"
               placeholder="Your message..."
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                class="w-full rounded-xl border border-[#E0E0ED] px-3 py-3 text-slate-800 placeholder:text-slate-400 transition focus:outline-none focus:ring-2 focus:ring-[#5E44FF]/30 hover:border-[#B5A9FF] focus:border-[#5E44FF]"
             ></textarea>
           </article>
           <button
             type="submit"
-            class="w-full rounded-2xl bg-slate-900 py-3 [@media(min-width:376px)]:py-4 text-sm [@media(min-width:376px)]:text-base font-medium text-white transition hover:bg-slate-800"
+              class="mx-auto w-full rounded-2xl bg-[#1A1A2C] px-9 py-4 text-base font-medium text-white transition hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76] md:w-[589px]"
           >
             Submit
           </button>
         </form>
       </div>
       <footer
-        class="flex flex-col [@media(min-width:376px)]:flex-row items-center justify-between gap-4 [@media(min-width:376px)]:gap-0 text-xs [@media(min-width:376px)]:text-sm text-slate-600 w-full max-w-[1199px] mx-auto px-[16px] [@media(min-width:376px)]:px-0"
+          class="flex w-full max-w-[375px] flex-col items-center justify-between gap-4 text-sm text-slate-600 mx-auto md:max-w-[1199px] md:flex-row"
       >
         <p>Acme productivity app ©2024</p>
         <nav aria-label="Secondary navigation">
-          <ul
-            class="flex flex-wrap gap-4 [@media(min-width:376px)]:gap-8 font-bold justify-center"
-          >
-            <li><a href="#" class="hover:text-slate-700">FAQ</a></li>
-            <li><a href="#" class="hover:text-slate-700">Terms</a></li>
-            <li><a href="#" class="hover:text-slate-700">AI Policy</a></li>
-            <li><a href="#" class="hover:text-slate-700">Pricing</a></li>
+            <ul class="flex gap-8 font-bold">
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">FAQ</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">Terms</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">AI Policy</a></li>
+              <li><a href="#" class="transition hover:text-[#5E44FF] hover:underline">Pricing</a></li>
           </ul>
         </nav>
       </footer>
